@@ -1,0 +1,17 @@
+{
+  "name": "topologyjsonparser",
+  "version": "1.0.0",
+  "description": "parses topology jsons",
+  "main": "parseAllJsons.js",
+  "dependencies": {
+    "babel": "^6.5.2"
+  },
+  "devDependencies": {
+    "mysql": "^2.10.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
