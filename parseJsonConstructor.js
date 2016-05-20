@@ -1,6 +1,4 @@
 var fs = require('fs');
-var queries = require('./sql.js');
-
 
 var scraperObj = {
   parseJson: function(hash_key) {
@@ -34,11 +32,11 @@ var scraperObj = {
   queryString: function(hash_key) {
     
     if (parseInt(hash_key[1].charAt(0))) {
-      var query = "./wiser-scraping-topologies/topologies/0-9/" + hash_key[1];
+      var query = "../wiser-scraping-topologies/topologies/0-9/" + hash_key[1];
       
       return query;
     } else {
-      var query = "./wiser-scraping-topologies/topologies/" + hash_key[1].charAt(0).toLowerCase() + "/" + hash_key[1];
+      var query = "../wiser-scraping-topologies/topologies/" + hash_key[1].charAt(0).toLowerCase() + "/" + hash_key[1];
       
       
       return query;

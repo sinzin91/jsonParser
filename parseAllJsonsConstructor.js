@@ -9,7 +9,7 @@ var topologies = '';
 var fields = ['scraperClassName', 'Seller Name', 'Seller URL', 'Phantom JS', 'Search', 'Search Patterns', 'Price Selector', 'Proxy Provider', 'Wiser Filter', 'Enrichment DSL', 'Marketplace', 'Multiple Variations'];
 
 // recurse through topologies directory, ignoring production jsons
-recursive('wiser-scraping-topologies/topologies', ['*-production*'], function (err, files) {
+recursive('../wiser-scraping-topologies/topologies', ['*-production*'], function (err, files) {
   // Files is an array of filename
   topologies += '[';
   for (var file in files) {
